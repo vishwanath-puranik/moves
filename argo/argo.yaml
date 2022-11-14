@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sample-api
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: test
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: .
+    repoURL: 'https://github.com/vishwanath-puranik/moves.git'
+    targetRevision: HEAD
+
