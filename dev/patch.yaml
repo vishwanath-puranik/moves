@@ -1,0 +1,27 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: servicelogin
+  namespace: test 
+  labels:
+    app: servicelogin
+    app.kubernetes.io/component: servicelogin
+    app.kubernetes.io/instance: servicelogin
+    app.kubernetes.io/name: servicelogin
+    app.kubernetes.io/part-of: service-login-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: servicelogin
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: servicelogin
+        deployment: servicelogin
+    spec:
+      containers:
+        - name: servicelogin
+          image: >-
+            quay.io/vishwanath_puranik/slogin@$IMAGE_DIGEST
