@@ -5,5 +5,5 @@ generatorOptions:
  disableNameSuffixHash: true
 
 patchesStrategicMerge:
- - patch_new.yaml
+ - patch.yaml
 
