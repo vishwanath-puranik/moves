@@ -10,6 +10,6 @@ spec:
   project: default
   source:
     path: ./dev
-    repoURL: 'https://github.com/vishwanath-puranik/moves.git'
+    repoURL: 'https://github.com/vishwanath-puranik/moves-gitops.git'
     targetRevision: dev9 
 
