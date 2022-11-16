@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: .
+    path: ./dev
     repoURL: 'https://github.com/vishwanath-puranik/moves.git'
-    targetRevision: HEAD
+    targetRevision: dev8 
 
